@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VibeCheck 411L</title>
+  <style>
+    /* General Reset and Font */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #4cc9f0;
+      text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+    }
+
+    p {
+      color: #a2a2c2;
+      margin-bottom: 2rem;
+    }
+
+    /* Button Container */
+    .button-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px border rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      max-width: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* Base Button Styling */
+    button {
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      color: white;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      filter: brightness(1.2);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    /* Specific Button Colors */
+    #btnFortune { background-color: #7209b7; }
+    #btnJoke { background-color: #f72585; }
+    .btnMood { background-color: #4361ee; }
+    #btnSmash { background-color: #e63946; }
+    #btnSecret { background-color: #3f37c9; }
+
+    /* Output Section */
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #4cc9f0;
+    }
+
+    #out {
+      background: #0f172a;
+      color: #00ff41; /* Retro Terminal Green */
+      padding: 1.5rem;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 500px;
+      min-height: 50px;
+      border: 1px solid #334155;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>VibeCheck 411L</h1>
+  <p>Click buttons. This page will fetch data from your Node.js API.</p>
+
+  <div class="button-container">
+    <button id="btnFortune">🔮 Fortune</button>
+    <button id="btnJoke">😂 Joke</button>
+    <button data-mood="happy" class="btnMood">😄 Happy</button>
+    <button data-mood="tired" class="btnMood">🥱 Tired</button>
+    <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
+    <button id="btnSmash">💥 SMASH!</button>
+    <button id="btnSecret">🕵️ Secret</button>
+  </div>
+
+  <h2>Output</h2>
+  <pre id="out">Ready...</pre>
+
+  <script src="app.js"></script>
+</body>
+</html>

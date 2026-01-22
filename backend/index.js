@@ -34,9 +34,9 @@ const jokes = [
 ];
 
 const vibeMap = {
-  happy: { emoji: "😄", message: "Keep going - you're shipping greatness!" },
-  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit." },
-  stressed: { emoji: "😵‍💫", message: "Breathe. One bug at a time." },
+  happy: { emoji: "😄", message: "Ang saya mo!" },
+  tired: { emoji: "🥱", message: "Antuk-antukan para mag tulog-tulugan" },
+  stressed: { emoji: "😵‍💫", message: "Kaya pa ba sah" },
 };
 
 // Smash counter (stored in memory for now)
